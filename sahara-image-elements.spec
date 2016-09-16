@@ -8,7 +8,7 @@ Summary:        Image creation tools for Openstack Sahara
 
 License:        ASL 2.0
 URL:            https://launchpad.net/sahara
-Source0:        http://tarballs.openstack.org/sahara-image-elements/sahara-image-elements-%{version}%{?milestone}.tar.gz
+Source0:        https://tarballs.openstack.org/sahara-image-elements/sahara-image-elements-%{version}%{?milestone}.tar.gz
 BuildArch:      noarch
 
 BuildRequires: python2-devel
