@@ -1,5 +1,5 @@
-# UUID          Group Name
-False 	Non-Interactive Users
-0a08da6c41c920524ab98a85be20a2b8dacc35f6       	openstack/sahara-image-elements-distgit-core
-5144a1b4c1486484db48223f9c14bee8fc89f9c9        	openstack/sahara-image-elements-distgit-ptl
-global:Registered-Users		Registered Users
+# UUID                                  	Group Name
+#
+0a08da6c41c920524ab98a85be20a2b8dacc35f6	openstack/sahara-image-elements-distgit-core
+5144a1b4c1486484db48223f9c14bee8fc89f9c9	openstack/sahara-image-elements-distgit-ptl
+global:Registered-Users                 	Registered Users
