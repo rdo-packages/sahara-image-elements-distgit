@@ -1,14 +1,19 @@
+%global milestone .0rc1
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           sahara-image-elements
 Epoch:          1
-Version:        XXX
-Release:        XXX
+Version:        6.0.0
+Release:        0.1%{?milestone}%{?dist}
 Summary:        Image creation tools for Openstack Sahara
 
 License:        ASL 2.0
 URL:            https://launchpad.net/sahara
 Source0:        https://tarballs.openstack.org/sahara-image-elements/sahara-image-elements-%{version}%{?milestone}.tar.gz
+#
+# patches_base=6.0.0.0rc1
+#
+
 BuildArch:      noarch
 
 BuildRequires: python2-devel
@@ -45,3 +50,6 @@ in Sahara.
 %{python2_sitelib}/sahara_image_elements-%{upstream_version}-py?.?.egg-info
 
 %changelog
+* Fri Feb 10 2017 Alfredo Moralejo <amoralej@redhat.com> 1:6.0.0-0.1.0rc1
+- Update to 6.0.0.0rc1
+
