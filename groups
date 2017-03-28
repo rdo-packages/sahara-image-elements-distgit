@@ -1,5 +1,9 @@
-# UUID                                  	Group Name
-#
-0a08da6c41c920524ab98a85be20a2b8dacc35f6	openstack/sahara-image-elements-distgit-core
-5144a1b4c1486484db48223f9c14bee8fc89f9c9	openstack/sahara-image-elements-distgit-ptl
-global:Registered-Users                 	Registered Users
+# UUID Group Name
+global:Registered-Users	Registered Users
+a591e1a7c158c600c2c723d89df6f794fd9d329c	openstack/sahara-image-elements-core
+global:Anonymous-Users	Anonymous Users
+48d7a5244003ff135fd5649d84c930d11a7cac10	openstack/sahara-image-elements-ptl
+05a678d3d4a168e149d5e8a0063bbd1b1c5526da	Administrators
+401cf37bee35d1c809d4d957e55f2a304f8eed69	rdo-provenpackagers
+4572c517702492251ad622a289176552a8acbbb2	rdo-superusers
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73	Non-Interactive Users
