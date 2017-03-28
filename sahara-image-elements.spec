@@ -43,5 +43,6 @@ in Sahara.
 %{_bindir}/diskimage-create.sh
 %{_datadir}/sahara-elements
 %{python2_sitelib}/sahara_image_elements-%{upstream_version}-py?.?.egg-info
+%attr(0755, -, -) %{_datadir}/sahara-elements/elements/hadoop-mapr/install.d/45-epel-dependencies
 
 %changelog
