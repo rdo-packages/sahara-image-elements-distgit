@@ -12,11 +12,11 @@ Source0:        https://tarballs.openstack.org/sahara-image-elements/sahara-imag
 BuildArch:      noarch
 
 BuildRequires: python2-devel
-BuildRequires: python-setuptools
-BuildRequires: python-pbr >= 0.5.19
+BuildRequires: python2-setuptools
+BuildRequires: python2-pbr >= 2.0.0
 
 Requires: dib-utils
-Requires: diskimage-builder >= 0.1.34-21
+Requires: diskimage-builder >= 1.1.2
 Requires: rsync
 Requires: wget
 Requires: qemu-kvm
