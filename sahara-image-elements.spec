@@ -1,5 +1,17 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
+# Macros for py2/py3 compatibility
+%if 0%{?fedora} || 0%{?rhel} > 7
+%global pyver %{python3_pkgversion}
+%else
+%global pyver 2
+%endif
+%global pyver_bin python%{pyver}
+%global pyver_sitelib %python%{pyver}_sitelib
+%global pyver_install %py%{pyver}_install
+%global pyver_build %py%{pyver}_build
+# End of macros for py2/py3 compatibility
+
 Name:           sahara-image-elements
 Epoch:          1
 Version:        XXX
@@ -11,12 +23,12 @@ URL:            https://launchpad.net/sahara
 Source0:        https://tarballs.openstack.org/sahara-image-elements/sahara-image-elements-%{version}%{?milestone}.tar.gz
 BuildArch:      noarch
 
-BuildRequires: python2-devel
-BuildRequires: python2-setuptools
-BuildRequires: python2-pbr >= 2.0.0
+BuildRequires: python%{pyver}-devel
+BuildRequires: python%{pyver}-setuptools
+BuildRequires: python%{pyver}-pbr >= 2.0.0
 
 Requires: dib-utils
-Requires: diskimage-builder >= 1.1.2
+Requires: diskimage-builder >= 2.11.0
 Requires: rsync
 Requires: wget
 Requires: qemu-kvm
@@ -32,16 +44,16 @@ in Sahara.
 %setup -q -n sahara-image-elements-%{upstream_version}
 
 %build
-%{__python2} setup.py build
+%{pyver_build}
 
 %install
-%{__python2} setup.py install --skip-build --root %{buildroot}
+%{pyver_install}
 
 %files
 %doc AUTHORS LICENSE ChangeLog
 %{_bindir}/sahara-image-create
 %{_bindir}/diskimage-create.sh
 %{_datadir}/sahara-elements
-%{python2_sitelib}/sahara_image_elements-%{upstream_version}-py?.?.egg-info
+%{pyver_sitelib}/sahara_image_elements-%{upstream_version}-py?.?.egg-info
 
 %changelog
