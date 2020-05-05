@@ -1,15 +1,20 @@
+%global milestone .0rc1
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 
 Name:           sahara-image-elements
 Epoch:          1
-Version:        XXX
-Release:        XXX
+Version:        12.0.0
+Release:        0.1%{?milestone}%{?dist}
 Summary:        Image creation tools for Openstack Sahara
 
 License:        ASL 2.0
 URL:            https://launchpad.net/sahara
 Source0:        https://tarballs.openstack.org/sahara-image-elements/sahara-image-elements-%{version}%{?milestone}.tar.gz
+#
+# patches_base=12.0.0.0rc1
+#
+
 BuildArch:      noarch
 
 BuildRequires: python3-devel
@@ -46,3 +51,6 @@ in Sahara.
 %{python3_sitelib}/sahara_image_elements-%{upstream_version}-py?.?.egg-info
 
 %changelog
+* Tue May 05 2020 RDO <dev@lists.rdoproject.org> 1:12.0.0-0.1.0rc1
+- Update to 12.0.0.0rc1
+
