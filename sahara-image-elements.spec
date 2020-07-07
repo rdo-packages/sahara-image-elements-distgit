@@ -43,6 +43,6 @@ in Sahara.
 %{_bindir}/sahara-image-create
 %{_bindir}/diskimage-create.sh
 %{_datadir}/sahara-elements
-%{python3_sitelib}/sahara_image_elements-%{upstream_version}-py?.?.egg-info
+%{python3_sitelib}/sahara_image_elements-%{upstream_version}-py%{python3_version}.egg-info
 
 %changelog
