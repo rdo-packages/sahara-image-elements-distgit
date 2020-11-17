@@ -36,7 +36,7 @@ Requires: wget
 Requires: qemu-kvm
 Requires: qemu-img
 Requires: kpartx
-Requires: git
+Requires: git-core
 
 %description
 Sahara-image-elements provides the ability to create the images necessary to generate data processing clusters
