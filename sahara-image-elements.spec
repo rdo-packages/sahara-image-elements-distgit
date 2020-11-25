@@ -14,7 +14,7 @@
 
 Name:           sahara-image-elements
 Epoch:          1
-Version:        10.0.1
+Version:        10.0.2
 Release:        1%{?dist}
 Summary:        Image creation tools for Openstack Sahara
 
@@ -59,6 +59,9 @@ in Sahara.
 %{pyver_sitelib}/sahara_image_elements-%{upstream_version}-py?.?.egg-info
 
 %changelog
+* Wed Nov 25 2020 RDO <dev@lists.rdoproject.org> 1:10.0.2-1
+- Update to 10.0.2
+
 * Tue Oct 22 2019 RDO <dev@lists.rdoproject.org> 1:10.0.1-1
 - Update to 10.0.1
 
