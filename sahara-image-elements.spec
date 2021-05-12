@@ -48,6 +48,8 @@ in Sahara.
 %{gpgverify}  --keyring=%{SOURCE102} --signature=%{SOURCE101} --data=%{SOURCE0}
 %endif
 %setup -q -n sahara-image-elements-%{upstream_version}
+# Let RPM handle the dependencies
+rm -f {,test-}requirements.txt
 
 %build
 %{py3_build}
