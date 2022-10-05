@@ -1,4 +1,3 @@
-%global milestone .0rc1
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
 %global sources_gpg_sign 0xa63ea142678138d1bb15f2e303bdfd64dd164087
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
@@ -7,14 +6,12 @@
 Name:           sahara-image-elements
 Epoch:          1
 Version:        17.0.0
-Release:        0.1%{?milestone}%{?dist}
+Release:        1%{?dist}
 Summary:        Image creation tools for Openstack Sahara
 
 License:        ASL 2.0
 URL:            https://launchpad.net/sahara
 Source0:        https://tarballs.openstack.org/sahara-image-elements/sahara-image-elements-%{version}%{?milestone}.tar.gz
-#
-# patches_base=17.0.0.0rc1
 #
 
 # Required for tarball sources verification
@@ -70,6 +67,9 @@ rm -f {,test-}requirements.txt
 %{python3_sitelib}/sahara_image_elements-%{upstream_version}-py%{python3_version}.egg-info
 
 %changelog
+* Wed Oct 05 2022 RDO <dev@lists.rdoproject.org> 1:17.0.0-1
+- Update to 17.0.0
+
 * Fri Sep 23 2022 RDO <dev@lists.rdoproject.org> 1:17.0.0-0.1.0rc1
 - Update to 17.0.0.0rc1
 
