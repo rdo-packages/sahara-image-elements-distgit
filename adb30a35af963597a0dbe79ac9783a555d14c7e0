@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1ee47a52_99696bca",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-07-25T13:41:31Z",
+      "side": 1,
+      "message": "Waiting for diskimage-builder providing python3.X-",
+      "revId": "adb30a35af963597a0dbe79ac9783a555d14c7e0",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
