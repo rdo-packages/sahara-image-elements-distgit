@@ -1,4 +1,3 @@
-%global milestone .0rc1
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
 %global sources_gpg_sign 0x815AFEC729392386480E076DCC0DFE2D21C023C9
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
@@ -9,14 +8,12 @@
 Name:           sahara-image-elements
 Epoch:          1
 Version:        19.0.0
-Release:        0.1%{?milestone}%{?dist}
+Release:        1%{?dist}
 Summary:        Image creation tools for Openstack Sahara
 
 License:        Apache-2.0
 URL:            https://launchpad.net/sahara
 Source0:        https://tarballs.openstack.org/sahara-image-elements/sahara-image-elements-%{version}%{?milestone}.tar.gz
-#
-# patches_base=19.0.0.0rc1
 #
 
 # Required for tarball sources verification
@@ -85,6 +82,9 @@ done
 %{python3_sitelib}/sahara_image_elements-%{upstream_version}.dist-info
 
 %changelog
+* Wed Oct 04 2023 RDO <dev@lists.rdoproject.org> 1:19.0.0-1
+- Update to 19.0.0
+
 * Fri Sep 15 2023 RDO <dev@lists.rdoproject.org> 1:19.0.0-0.1.0rc1
 - Update to 19.0.0.0rc1
 
