@@ -73,3 +73,4 @@ rm -f {,test-}requirements.txt
 * Wed Mar 15 2023 RDO <dev@lists.rdoproject.org> 1:18.0.0-0.1.0rc1
 - Update to 18.0.0.0rc1
 
+# REMOVEME: error caused by commit https://opendev.org/openstack/sahara-image-elements/commit/36717b532385bb48078143edf49f63172df0ca75
